@@ -154,16 +154,16 @@ if [ "$1" = "gen_html" ]; then
         </div>
 
         <div class="section">
-            <div class="section-title">音量微调</div>
-            <div class="grid" style="margin-bottom: 15px;">
-                <button class="btn" onclick="sendCmd('-')">🔉 音量 －</button>
-                <button class="btn" onclick="sendCmd('+')">🔊 音量 ＋</button>
-            </div>
             <div class="section-title">固定音量滑块</div>
             <div class="vol-container">
                 <span style="font-size: 0.85rem; color: #999;">MIN</span>
                 <input type="range" min="5" max="100" step="5" value="50" id="volSlider" oninput="updateLabel(this.value)" onchange="sendCmd(this.value + '%')">
                 <span class="vol-display" id="volVal">50%</span>
+            </div>
+            <div class="section-title">音量微调</div>
+            <div class="grid" style="margin-bottom: 15px;">
+                <button class="btn" onclick="sendCmd('-')">🔉 音量 －</button>
+                <button class="btn" onclick="sendCmd('+')">🔊 音量 ＋</button>
             </div>
         </div>
     </div>
