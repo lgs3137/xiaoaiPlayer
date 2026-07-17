@@ -1375,8 +1375,6 @@ if [ "$1" = "gen_html" ]; then
         .btn.primary:active { background: #0d56c6; }
         .btn.danger { background: #ff3b30; color: white; }
         .btn.danger:active { background: #d32f2f; }
-        .btn.random { background: #ff9800; color: white; }
-        .btn.random:active { background: #e68900; }
         
         .vol-container { display: flex; align-items: center; gap: 12px; margin-top: 15px; position: relative; }
         input[type="range"] { flex: 1; height: 8px; border-radius: 4px; background: #ddd; -webkit-appearance: none; outline: none; }
@@ -1416,7 +1414,7 @@ if [ "$1" = "gen_html" ]; then
         <div class="section">
             <div class="section-title">控制</div>
             <div style="display: flex; gap: 12px;">
-                <button class="btn random" style="flex: 1; padding: 14px;" onclick="randomPlay()">🎲 随机播放</button>
+                <button class="btn primary" style="flex: 1; padding: 14px;" onclick="randomPlay()">🎲 随机播放</button>
                 <button class="btn danger" style="flex: 1; padding: 14px;" onclick="sendCmd('s')">■ 停止播放</button>
             </div>
         </div>
